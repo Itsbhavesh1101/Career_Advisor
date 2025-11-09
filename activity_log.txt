@@ -51,3 +51,4 @@
 [2025-11-08T19:09:50] Feature Development & Initial Setup - Initialize Career Advisor repository, configure OpenAI LLM API integration. (Commit 12/14)
 [2025-11-08T20:04:30] Feature Development & Initial Setup - Initialize Career Advisor repository, configure OpenAI LLM API integration. (Commit 13/14)
 [2025-11-08T21:00:30] Feature Development & Initial Setup - Initialize Career Advisor repository, configure OpenAI LLM API integration. (Commit 14/14)
+[2025-11-09T09:00:21] API Integration & Development - Create custom prompts for chatbot to act as technical interviewer for specific roles. (Commit 1/10)
