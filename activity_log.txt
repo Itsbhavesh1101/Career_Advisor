@@ -61,3 +61,4 @@
 [2025-11-09T18:20:30] API Integration & Development - Create custom prompts for chatbot to act as technical interviewer for specific roles. (Commit 8/10)
 [2025-11-09T19:39:38] API Integration & Development - Create custom prompts for chatbot to act as technical interviewer for specific roles. (Commit 9/10)
 [2025-11-09T21:00:06] API Integration & Development - Create custom prompts for chatbot to act as technical interviewer for specific roles. (Commit 10/10)
+[2025-11-12T09:00:37] Bug Fix & Pull Request Creation - Build PDF resume parser helper using PyPDF2 to extract text content. (Commit 1/7)
