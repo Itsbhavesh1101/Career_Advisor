@@ -172,3 +172,4 @@
 [2026-02-21T16:11:51] API Integration & Development - Implement skill gap analyzer: compare user profile to target role and suggest courses. (Commit 4/6)
 [2026-02-21T18:36:48] API Integration & Development - Implement skill gap analyzer: compare user profile to target role and suggest courses. (Commit 5/6)
 [2026-02-21T21:00:46] API Integration & Development - Implement skill gap analyzer: compare user profile to target role and suggest courses. (Commit 6/6)
+[2026-02-22T09:00:13] Feature Implementation - Implement LLM prompt builder to extract skills, experience, and education from resume text. (Commit 1/13)
