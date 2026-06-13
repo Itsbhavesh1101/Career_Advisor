@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+:root {
+	--background: #ffffff;
+	--foreground: #15110d;
+	--sage-orange: #f97316;
+	--sage-orange-deep: #c2410c;
+	--sage-black: #15110d;
+	--sage-charcoal: #27211d;
+	--sage-line: rgba(21, 17, 13, 0.12);
+	--sage-glass: rgba(255, 255, 255, 0.92);
+}
+
+/* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind CSS v4 theme directive. */
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-manrope);
+	--font-display: var(--font-space-grotesk);
+}
+
+body {
+	min-height: 100vh;
+	background: #ffffff;
+	color: var(--foreground);
+	font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-display), system-ui, sans-serif;
+}
+
+::selection {
+	background: rgba(249, 115, 22, 0.25);
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+input,
+select,
+textarea {
+	color-scheme: light;
+}
+
+::placeholder {
+	color: rgba(82, 82, 82, 0.72);
+}
+
+@keyframes floatSignal {
+	0%,
+	100% {
+		transform: translateY(0) rotate(-1deg);
+	}
+	50% {
+		transform: translateY(-10px) rotate(1deg);
+	}
+}
+
+@keyframes progressGlow {
+	0% {
+		box-shadow: 0 0 0 rgba(249, 115, 22, 0);
+	}
+	50% {
+		box-shadow: 0 0 28px rgba(249, 115, 22, 0.24);
+	}
+	100% {
+		box-shadow: 0 0 0 rgba(249, 115, 22, 0);
+	}
+}
+
+@keyframes quizIn {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes assistantFloat {
+	0%,
+	100% {
+		transform: translateY(0) rotate(-2deg);
+	}
+	50% {
+		transform: translateY(-5px) rotate(2deg);
+	}
+}
+
+@keyframes assistantBlink {
+	0%,
+	88%,
+	100% {
+		transform: scaleY(1);
+	}
+	92% {
+		transform: scaleY(0.18);
+	}
+}
+
+@keyframes assistantSignal {
+	0% {
+		opacity: 0.24;
+		transform: scale(0.82);
+	}
+	70% {
+		opacity: 0;
+		transform: scale(1.38);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.38);
+	}
+}
+
+.assistant-doodle {
+	animation: assistantFloat 4s ease-in-out infinite;
+}
+
+.assistant-doodle-eye {
+	transform-origin: center;
+	animation: assistantBlink 5s ease-in-out infinite;
+}
+
+.assistant-doodle-signal {
+	animation: assistantSignal 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.assistant-doodle,
+	.assistant-doodle-eye,
+	.assistant-doodle-signal {
+		animation: none;
+	}
+}

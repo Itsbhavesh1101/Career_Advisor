@@ -1,0 +1,82 @@
+{
+  "version": "generic-initial-2026-05",
+  "institution_name": "Partner Institution",
+  "schools": [
+    {
+      "school_id": "school-engineering",
+      "school_name": "School of Engineering",
+      "campus": "Main Campus",
+      "is_active": true,
+      "programs": [
+        {
+          "program_id": "generic-btech-cse-ai",
+          "program_name": "B.Tech CSE - Artificial Intelligence",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Python", "Mathematics", "Data Structures", "Machine Learning Foundations"],
+          "career_paths": ["AI Application Developer", "Machine Learning Engineer", "Data Analyst"],
+          "admission_fit_signals": ["High programming interest", "Strong mathematics", "Curiosity about automation"],
+          "reality_checks": ["AI readiness depends on coding practice, mathematics, data handling, and projects before advanced model work."]
+        },
+        {
+          "program_id": "generic-btech-cse-cyber",
+          "program_name": "B.Tech CSE - Cyber Security",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Networking", "Linux", "Python", "Security Fundamentals"],
+          "career_paths": ["Security Analyst", "SOC Analyst", "Penetration Testing Associate"],
+          "admission_fit_signals": ["Strong logical reasoning", "Interest in systems", "Patience for investigation"],
+          "reality_checks": ["Cyber Security requires networking, operating systems, logs, documentation, and ethical discipline before advanced labs."]
+        },
+        {
+          "program_id": "generic-btech-cse-core",
+          "program_name": "B.Tech Computer Science and Engineering",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Programming", "Data Structures", "Databases", "Web Development"],
+          "career_paths": ["Software Developer", "Full Stack Developer", "QA Engineer"],
+          "admission_fit_signals": ["Interest in software", "Problem solving", "Consistent practice mindset"],
+          "reality_checks": ["Core CSE is broad and requires steady coding, project building, and fundamentals across multiple domains."]
+        }
+      ]
+    },
+    {
+      "school_id": "school-management",
+      "school_name": "School of Management",
+      "campus": "Main Campus",
+      "is_active": true,
+      "programs": [
+        {
+          "program_id": "generic-bba",
+          "program_name": "Bachelor of Business Administration",
+          "degree_level": "undergraduate",
+          "duration_years": 3,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Communication", "Excel", "Business Analysis", "Presentation"],
+          "career_paths": ["Business Analyst", "Marketing Associate", "Operations Associate"],
+          "admission_fit_signals": ["Interest in business", "Comfort with communication", "People and operations curiosity"],
+          "reality_checks": ["Management readiness improves through presentations, case work, internships, and consistent communication practice."]
+        },
+        {
+          "program_id": "generic-mba",
+          "program_name": "Master of Business Administration",
+          "degree_level": "postgraduate",
+          "duration_years": 2,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Business Strategy", "Analytics", "Leadership", "Communication"],
+          "career_paths": ["Management Trainee", "Business Consultant", "Product Associate"],
+          "admission_fit_signals": ["Career clarity", "Leadership interest", "Analytical thinking"],
+          "reality_checks": ["MBA outcomes depend on specialization clarity, internship quality, networking, and applied business projects."]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "version": "sage-initial-2026-05",
+  "institution_name": "SAGE Group of Institutions",
+  "schools": [
+    {
+      "school_id": "sirt-engineering",
+      "school_name": "SIRT Engineering",
+      "campus": "SAGE/SIRT",
+      "is_active": true,
+      "programs": [
+        {
+          "program_id": "sirt-btech-cse-aiml",
+          "program_name": "B.Tech CSE - AIML",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Python", "Mathematics", "Data Structures", "Machine Learning Foundations"],
+          "career_paths": ["Machine Learning Engineer", "AI Application Developer", "Data Analyst"],
+          "admission_fit_signals": ["High programming interest", "Strong mathematics", "Curiosity about automation"],
+          "reality_checks": ["AI success depends on coding practice, mathematics, data handling, and projects before advanced model work."]
+        },
+        {
+          "program_id": "sirt-btech-cse-cyber",
+          "program_name": "B.Tech CSE - Cyber Security",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Networking", "Linux", "Python", "Security Fundamentals"],
+          "career_paths": ["Security Analyst", "SOC Analyst", "Penetration Testing Associate"],
+          "admission_fit_signals": ["Strong logical reasoning", "Interest in systems", "Patience for investigation"],
+          "reality_checks": ["Cyber Security requires networking, operating systems, logs, documentation, and ethical discipline before advanced hacking labs."]
+        },
+        {
+          "program_id": "sirt-btech-cse-core",
+          "program_name": "B.Tech CSE",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Programming", "Data Structures", "Databases", "Web Development"],
+          "career_paths": ["Software Developer", "Full Stack Developer", "QA Engineer"],
+          "admission_fit_signals": ["Interest in software", "Problem solving", "Consistent practice mindset"],
+          "reality_checks": ["Core CSE is broad and requires steady coding, project building, and fundamentals across multiple domains."]
+        },
+        {
+          "program_id": "sirt-btech-ece",
+          "program_name": "B.Tech Electronics and Communication Engineering",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Circuit Fundamentals", "Embedded Systems", "Signal Basics", "Programming"],
+          "career_paths": ["Embedded Engineer", "IoT Developer", "Electronics Design Associate"],
+          "admission_fit_signals": ["Interest in electronics", "Comfort with physics", "Hands-on hardware curiosity"],
+          "reality_checks": ["ECE combines hardware, mathematics, communication systems, and software; it is not only mobile or telecom work."]
+        },
+        {
+          "program_id": "sirt-btech-civil-legacy",
+          "program_name": "B.Tech Civil Engineering",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": false,
+          "branches": [],
+          "priority_skills": ["Surveying", "Structural Basics", "Project Sites"],
+          "career_paths": ["Site Engineer", "Civil Design Associate"],
+          "admission_fit_signals": ["Interest in infrastructure", "Comfort with site work"],
+          "reality_checks": ["Inactive catalog entries are retained only for migration and historical compatibility."]
+        }
+      ]
+    },
+    {
+      "school_id": "sage-management",
+      "school_name": "SAGE Management",
+      "campus": "SAGE",
+      "is_active": true,
+      "programs": [
+        {
+          "program_id": "sage-bba",
+          "program_name": "BBA",
+          "degree_level": "undergraduate",
+          "duration_years": 3,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Communication", "Excel", "Business Basics", "Presentation"],
+          "career_paths": ["Business Development Executive", "Operations Associate", "Marketing Associate"],
+          "admission_fit_signals": ["People-facing interest", "Business curiosity", "Communication orientation"],
+          "reality_checks": ["BBA outcomes depend heavily on internships, communication, analytics basics, and domain exposure."]
+        },
+        {
+          "program_id": "sage-mba",
+          "program_name": "MBA",
+          "degree_level": "postgraduate",
+          "duration_years": 2,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Business Analytics", "Communication", "Leadership", "Domain Projects"],
+          "career_paths": ["Management Trainee", "Business Analyst", "Marketing Manager"],
+          "admission_fit_signals": ["Career switch clarity", "Leadership interest", "Analytical thinking"],
+          "reality_checks": ["MBA value depends on specialization clarity, internships, live projects, and measurable business communication."]
+        }
+      ]
+    },
+    {
+      "school_id": "sage-pharmacy",
+      "school_name": "SAGE Pharmacy",
+      "campus": "SAGE",
+      "is_active": true,
+      "programs": [
+        {
+          "program_id": "sage-bpharm",
+          "program_name": "B.Pharm",
+          "degree_level": "undergraduate",
+          "duration_years": 4,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Chemistry", "Biology", "Lab Discipline", "Regulatory Basics"],
+          "career_paths": ["Pharmacist", "Quality Control Associate", "Clinical Research Associate"],
+          "admission_fit_signals": ["Interest in healthcare", "Chemistry comfort", "Detail orientation"],
+          "reality_checks": ["Pharmacy requires lab discipline, regulatory understanding, chemistry depth, and patient safety mindset."]
+        }
+      ]
+    },
+    {
+      "school_id": "sage-legacy-school",
+      "school_name": "SAGE Legacy School",
+      "campus": "SAGE",
+      "is_active": false,
+      "programs": [
+        {
+          "program_id": "sage-legacy-bca",
+          "program_name": "BCA",
+          "degree_level": "undergraduate",
+          "duration_years": 3,
+          "is_active": true,
+          "branches": [],
+          "priority_skills": ["Programming Basics", "Computer Fundamentals"],
+          "career_paths": ["Junior Developer", "IT Support Associate"],
+          "admission_fit_signals": ["Interest in computing", "Practice mindset"],
+          "reality_checks": ["Programs under inactive schools must not appear in active catalog listings."]
+        }
+      ]
+    }
+  ]
+}

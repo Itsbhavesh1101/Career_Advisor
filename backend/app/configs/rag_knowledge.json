@@ -1,0 +1,69 @@
+{
+  "version": "sage-rag-seed-2026-05",
+  "chunks": [
+    {
+      "chunk_id": "program-aiml-foundation",
+      "source_title": "B.Tech CSE - AIML Foundation Expectations",
+      "source_type": "program",
+      "tags": ["AIML", "AI", "Python", "Mathematics"],
+      "program_ids": ["sirt-btech-cse-aiml"],
+      "text": "AIML students need strong programming practice, mathematics foundations, data handling, and project discipline before advanced model building. Early success depends on Python, linear algebra basics, statistics intuition, and consistent problem solving."
+    },
+    {
+      "chunk_id": "program-cyber-foundation",
+      "source_title": "B.Tech CSE - Cyber Security Foundation Expectations",
+      "source_type": "program",
+      "tags": ["Cyber Security", "Networking", "Linux", "Ethics"],
+      "program_ids": ["sirt-btech-cse-cyber"],
+      "text": "Cyber Security students need networking, operating system basics, Linux comfort, log analysis, documentation discipline, and strong ethics before advanced penetration testing. The branch suits investigative students who enjoy systems and patient debugging."
+    },
+    {
+      "chunk_id": "program-core-cse",
+      "source_title": "B.Tech CSE Core Career Foundation",
+      "source_type": "program",
+      "tags": ["CSE", "Programming", "Software", "Projects"],
+      "program_ids": ["sirt-btech-cse-core"],
+      "text": "Core CSE gives a broad software foundation across programming, data structures, databases, web systems, testing, and projects. It is suitable for students who want flexibility across software roles before choosing a specialization."
+    },
+    {
+      "chunk_id": "program-ece-foundation",
+      "source_title": "Electronics and Communication Engineering Foundation",
+      "source_type": "program",
+      "tags": ["ECE", "Electronics", "Embedded", "Physics"],
+      "program_ids": ["sirt-btech-ece"],
+      "text": "ECE combines electronics, communication systems, embedded systems, mathematics, and programming. Students should expect hardware concepts, lab work, signal basics, and software exposure for IoT and embedded roles."
+    },
+    {
+      "chunk_id": "counseling-expectation-reality",
+      "source_title": "Expectation Reality Check For Branch Counseling",
+      "source_type": "counseling",
+      "tags": ["counseling", "expectation reality", "branch selection"],
+      "program_ids": [],
+      "text": "Students often choose a branch based on job titles or peer pressure. Counselors should compare the student's daily learning habits, subject comfort, project interest, and long-term work style against the real first-year effort required by each program."
+    },
+    {
+      "chunk_id": "counseling-parent-concerns",
+      "source_title": "Parent Counseling Talking Points",
+      "source_type": "counseling",
+      "tags": ["parents", "admission", "confidence"],
+      "program_ids": [],
+      "text": "Parent discussions should avoid guaranteed placement promises. Strong counseling explains fit, effort, support systems, likely roles, skill-building milestones, and how the institution will track readiness over time."
+    },
+    {
+      "chunk_id": "placement-evidence-ledger",
+      "source_title": "Student Skill Evidence Ledger",
+      "source_type": "placement",
+      "tags": ["placement", "evidence", "projects", "skills"],
+      "program_ids": [],
+      "text": "Placement readiness should be proven through evidence such as GitHub projects, internship work, certifications, mock interview results, resume quality, communication practice, and role-specific assessments instead of only CGPA."
+    },
+    {
+      "chunk_id": "training-roi-readiness",
+      "source_title": "Training ROI Readiness Signals",
+      "source_type": "training",
+      "tags": ["training", "ROI", "readiness", "cohort"],
+      "program_ids": [],
+      "text": "Training investment should target cohort skill gaps that block company readiness. Useful signals include repeated missing skills, weak resume sections, low internship readiness, and company-fit gaps for upcoming recruiters."
+    }
+  ]
+}

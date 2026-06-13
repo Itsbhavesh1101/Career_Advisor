@@ -1,0 +1,88 @@
+from __future__ import annotations
+
+import pytest
+from pydantic import ValidationError
+
+from app.schemas.llm_outputs import (
+    BranchAnalysisLLMOutput,
+    CareerAnalysisLLMOutput,
+    CompanyFitAdjustments,
+    EmployabilityAdjustments,
+)
+from app.services.llm_cost_control import get_llm_events, record_llm_event
+
+
+def test_career_analysis_output_rejects_extra_fields() -> None:
+    payload = {
+        "career_recommendations": [{"role": "AI Engineer", "score": 82}],
+        "skill_gaps": [{"skill": "Machine Learning", "priority": "high"}],
+        "learning_roadmap": [{"stage": "Foundations", "topics": ["Python"]}],
+        "salary_insights": {
+            "currency": "INR",
+            "estimate_min": 600000,
+            "estimate_max": 1200000,
+            "extra": "not-allowed",
+        },
+        "industry_trends": [{"trend": "AI Agents", "impact": "high"}],
+    }
+
+    with pytest.raises(ValidationError):
+        CareerAnalysisLLMOutput.model_validate(payload)
+
+
+def test_salary_range_validation_enforced() -> None:
+    payload = {
+        "career_recommendations": [{"role": "AI Engineer", "score": 82}],
+        "skill_gaps": [{"skill": "Machine Learning", "priority": "high"}],
+        "learning_roadmap": [{"stage": "Foundations", "topics": ["Python"]}],
+        "salary_insights": {
+            "currency": "INR",
+            "estimate_min": 900000,
+            "estimate_max": 600000,
+        },
+        "industry_trends": [{"trend": "AI Agents", "impact": "high"}],
+    }
+
+    with pytest.raises(ValidationError):
+        CareerAnalysisLLMOutput.model_validate(payload)
+
+
+def test_company_fit_delta_bounds_enforced() -> None:
+    with pytest.raises(ValidationError):
+        CompanyFitAdjustments.model_validate({"Google": 999})
+
+
+def test_employability_delta_bounds_enforced() -> None:
+    with pytest.raises(ValidationError):
+        EmployabilityAdjustments.model_validate({"academic_delta": -99})
+
+
+def test_branch_schema_restricts_recommended_branch() -> None:
+    payload = {
+        "aiml_score": 80,
+        "cyber_security_score": 70,
+        "recommended_branch": "AIML/Cyber",
+        "branch_reasoning": [{"reason": "Strong logic"}],
+        "aiml_roles": [{"role": "Machine Learning Engineer", "score": 88}],
+        "cyber_roles": [{"role": "Security Analyst", "score": 78}],
+        "aiml_skills": ["Python"],
+        "cyber_skills": ["Linux"],
+        "aiml_roadmap": [{"year": 1, "topics": ["Python"]}],
+        "cyber_roadmap": [{"year": 1, "topics": ["Networking"]}],
+        "industry_insights": [{"branch": "AIML", "insight": "Growing market"}],
+    }
+
+    with pytest.raises(ValidationError):
+        BranchAnalysisLLMOutput.model_validate(payload)
+
+
+def test_llm_event_counter_tracks_events() -> None:
+    user_key = "user:test-metrics"
+    endpoint = "analysis"
+    record_llm_event(user_key=user_key, endpoint=endpoint, event="schema_fail")
+    record_llm_event(user_key=user_key, endpoint=endpoint, event="schema_fail")
+    record_llm_event(user_key=user_key, endpoint=endpoint, event="fallback")
+
+    events = get_llm_events(user_key, endpoint)
+    assert events["schema_fail"] >= 2
+    assert events["fallback"] >= 1
